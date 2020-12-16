@@ -1,0 +1,87 @@
+// header
+
+.header {
+    background: #fff;
+    padding: 0.5rem 1rem;
+    box-shadow: 
+        0 2px 4px -1px rgba(0,0,0,.2), 
+        0 4px 5px 0 rgba(0,0,0,.14), 
+        0 1px 10px 0 rgba(0,0,0,.12);
+    transition: all 0.3s ease-in-out;
+    
+    .search-box {
+        padding-left: 2rem;
+        transition: all 0.3s ease-in-out;
+        form {
+            position: relative;
+            display: flex;
+            align-items: center;
+            i {
+                position: absolute;
+                padding: 0.5rem;
+            }
+            input {
+                padding: 0.5rem 2rem;
+                border: 1px solid #6c6c6c;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .notification {
+        position: relative;
+        i {
+            font-size: 20px;
+            color: #000;
+        }
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px;
+            margin: -10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: #62c449;
+        }
+    }
+    .user {
+        position: relative;
+        display: flex;
+        align-items: center;
+        line-height: 16px;
+        .user-details {
+            padding-left: 5px;
+            color: #000;
+            h3 {
+                font-size: 16px;
+                font-weight: 800;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+            small {
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+    }
+    .profile-dropdown {
+        min-width: 160px;
+        .card-header {
+            padding: 1rem 0;
+            h3 {
+                font-size: 20px;
+                color: #000;
+            }
+        }
+    }
+
+    &.show {
+        left: 120px;
+        .search-box {
+            padding-left: 4rem;
+        }
+    }
+}

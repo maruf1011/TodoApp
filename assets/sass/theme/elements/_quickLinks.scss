@@ -1,0 +1,55 @@
+// Quick Links
+
+.quick-links {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card {
+        height: 130px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 0;
+        .card-body {
+            align-items: center;
+            display: flex;
+            .content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #716C6C;
+                padding: 0 30px;
+                span {
+                    background: #f6f6f9;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 40px;
+                    color: #716C6C;
+                    transition: all 0.3s ease-in-out;
+                }
+                h3 {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #989898;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &:hover {
+            .card-body {
+                .content {
+                    span {
+                        background: #7B88FF;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

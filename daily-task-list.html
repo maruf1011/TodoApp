@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+    <!--css-->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="y-blue-admin">
+         <!--Sidebar-->
+         <div class="sidebar">
+            <div class="logo">
+                <!-- <img :src="logo" alt=""> -->
+                <h1 class="mb-0">
+                    Working<span>TodoApp</span>
+                </h1>
+            </div>
+            <!-- menu -->
+            <div class="menu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="mdi mdi-home-outline pr-1"></i><span>Dashboard</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-account-settings-outline pr-1"></i><span>Members</span></a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="member-list.html">Member List</a>
+                            <a class="dropdown-item" href="add-member.html">Add New Member</a>
+                        </div>
+                        <!-- /Dropdown -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-calendar-text-outline pr-1"></i><span>Daily Task</span></a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="daily-task-list.html">Task List</a>
+                            <a class="dropdown-item" href="add-daily-task.html">Add New Task</a>
+                        </div>
+                        <!-- /Dropdown -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-clipboard-text-multiple-outline pr-1"></i><span>Task</span></a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="task-list.html">Task List</a>
+                            <a class="dropdown-item" href="add-task.html">Add New Task</a>
+                        </div>
+                        <!-- /Dropdown -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-table-eye pr-1"></i><span>Projects</span></a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="project-list.html">Projects List</a>
+                            <a class="dropdown-item" href="add-project.html">Add New Project</a>
+                        </div>
+                        <!-- /Dropdown -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notification.html"><i class="mdi mdi-bell-outline pr-1"></i><span>Notification</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="setting.html"><i class="mdi mdi-cog-outline pr-1"></i><span>Settings</span></a>
+                    </li>
+                </ul>
+                <!--target-->
+                <div class="target">
+                    <h1>500</h1>
+                    <span>Your Target Sale Today</span>
+                </div>
+                <!--/target-->
+            </div>
+            <!-- /menu -->
+        </div>
+        <!--/Sidebar-->
+        <!--Header-->
+        <header class="header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="flex-item">
+                    <!-- search box -->
+                    <div class="search-box">
+                        <form action="#">
+                            <i class="mdi mdi-magnify"></i>
+                            <input type="search" class="form-control shadow-none" placeholder="Search...">
+                        </form>
+                    </div>
+                    <!-- /search box -->
+                </div>
+                <div class="flex-item navbar navbar-expand-lg p-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="mdi mdi-dots-horizontal mdi-36px"></span>
+                    </button>
+                    <div class="collapse navbar-collapse top-collapse" id="navbarSupportedContent">
+                        <ul class="nav align-items-center justify-content-end">
+                            <li class="nav-item dropdown">
+                                <a href="notification.html" class="nav-link">
+                                    <!-- badge -->
+                                    <span class="notification">
+                                        <i class="mdi mdi-bell-outline"></i>
+                                        <span class="badge badge-danger rounded-pill">0</span>
+                                    </span>
+                                    <!-- /badge -->
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <!-- badge -->
+                                    <span class="user">
+                                        <img src="./assets/img/user.png" alt="">
+                                        <span class="user-details">
+                                            <h3>Admin</h3>
+                                            <small>Tohidul islam</small>
+                                        </span>
+                                    </span>
+                                    <!-- /badge -->
+                                </a>
+                                <!-- Dropdown -->
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown p-0" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="profile.html"><i class="mdi mdi-account-circle-outline pr-1"></i>Profile</a>
+                                    <a class="dropdown-item" href="login.html"><i class="mdi mdi-logout pr-1"></i>Logout</a>
+                                </div>
+                                <!-- /Dropdown -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--/Header-->
+        <!-- main -->
+        <main class="main">
+            <div class="container-wrapper">
+                <!--list-->
+                <div class="list">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-transparent border-0">
+                            <div class="head">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <h3>Daily Task List</h3>
+                                    </div>
+                                    <div class="col-lg-6 text-right">
+                                        <a href="add-daily-task.html" class="btn btn-primary shadow-none">Add New Task</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th width="5%">#Sl</th>
+                                            <th width="10%">Title</th>
+                                            <th width="10%">Date</th>
+                                            <th width="10%">Task List</th>
+                                            <th class="text-center">Working Groth</th>
+                                            <th class="text-center">Status</th>
+                                            <th class="text-center" width="15%">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>01</th>
+                                            <td>Makeup Website</td>
+                                            <td>25 Oct, 2020</td>
+                                            <td>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input" id="Banner">
+                                                    <label class="custom-control-label" for="Banner">Banner</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input" id="Responsive">
+                                                    <label class="custom-control-label" for="Responsive">Responsive</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input" id="UI/UX">
+                                                    <label class="custom-control-label" for="UI/UX">UI/UX</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input" id="Others">
+                                                    <label class="custom-control-label" for="Others">Others</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="progress" style="height:10px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">Proceccing</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-success">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>02</th>
+                                            <td>v-Tube</td>
+                                            <td>25 Oct, 2020</td>
+                                            <td>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input" id="Banner">
+                                                    <label class="custom-control-label" for="Banner">Banner</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input" id="Responsive">
+                                                    <label class="custom-control-label" for="Responsive">Responsive</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input" id="UI/UX">
+                                                    <label class="custom-control-label" for="UI/UX">UI/UX</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input" id="Others">
+                                                    <label class="custom-control-label" for="Others">Others</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="progress" style="height:10px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="badge bg-warning">Pending</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-success">View</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <div class="foot">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <span>Showing 1 to 6 of 6 Products </span>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-end">
+                                              <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><span class="mdi mdi-chevron-double-left"></span></a>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item">
+                                                <a class="page-link" href="#"><span class="mdi mdi-chevron-double-right"></span></a>
+                                              </li>
+                                            </ul>
+                                          </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/list-->
+            </div>
+        </main>
+        <!-- /main -->
+        <!--target-->
+        <div class="target">
+            <h1>500</h1>
+            <span>Your Target Sale Today</span>
+        </div>
+        <!--/target-->
+    </div>
+    <!-- js -->
+    <script src="./assets/js/core/jquery.min.js"></script>
+    <script src="./assets/js/core/popper.min.js"></script>
+    <script src="./assets/js/core/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

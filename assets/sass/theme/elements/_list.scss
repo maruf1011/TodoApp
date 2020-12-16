@@ -1,0 +1,37 @@
+// list
+
+.list {
+    .head {
+        h3 {
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #7B88FF;
+            margin-bottom: 0;
+        }
+        .btn {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+    }
+    .card {
+        .card-header {
+            border-bottom: 10px solid #ADFF7B!important;
+        }
+        .card-body {
+            .form-group {
+                margin-bottom: 15px;
+                label {
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+                .form-control {
+                    padding: 15px;
+                }
+                .btn {
+                    padding: 15px 30px;
+                }
+            }
+        }
+    }
+}

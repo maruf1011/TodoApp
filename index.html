@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+    <!--css-->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="y-blue-admin">
+        <!--Sidebar-->
+        <div class="sidebar">
+            <div class="logo">
+                <!-- <img :src="logo" alt=""> -->
+                <h1 class="mb-0">
+                    Working<span>TodoApp</span>
+                </h1>
+            </div>
+            <!-- menu -->
+            <div class="menu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="mdi mdi-home-outline pr-1"></i><span>Dashboard</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-account-settings-outline pr-1"></i><span>Members</span></a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="member-list.html">Member List</a>
+                            <a class="dropdown-item" href="add-member.html">Add New Member</a>
+                        </div>
+                        <!-- /Dropdown -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-calendar-text-outline pr-1"></i><span>Daily Task</span></a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="daily-task-list.html">Task List</a>
+                            <a class="dropdown-item" href="add-daily-task.html">Add New Task</a>
+                        </div>
+                        <!-- /Dropdown -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-clipboard-text-multiple-outline pr-1"></i><span>Task</span></a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="task-list.html">Task List</a>
+                            <a class="dropdown-item" href="add-task.html">Add New Task</a>
+                        </div>
+                        <!-- /Dropdown -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-table-eye pr-1"></i><span>Projects</span></a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="project-list.html">Projects List</a>
+                            <a class="dropdown-item" href="add-project.html">Add New Project</a>
+                        </div>
+                        <!-- /Dropdown -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notification.html"><i class="mdi mdi-bell-outline pr-1"></i><span>Notification</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="setting.html"><i class="mdi mdi-cog-outline pr-1"></i><span>Settings</span></a>
+                    </li>
+                </ul>
+                <!--target-->
+                <div class="target">
+                    <h1>500</h1>
+                    <span>Your Target Sale Today</span>
+                </div>
+                <!--/target-->
+            </div>
+            <!-- /menu -->
+        </div>
+        <!--/Sidebar-->
+        <!--Header-->
+        <header class="header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="flex-item">
+                    <!-- search box -->
+                    <div class="search-box">
+                        <form action="#">
+                            <i class="mdi mdi-magnify"></i>
+                            <input type="search" class="form-control shadow-none" placeholder="Search...">
+                        </form>
+                    </div>
+                    <!-- /search box -->
+                </div>
+                <div class="flex-item navbar navbar-expand-lg p-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="mdi mdi-dots-horizontal mdi-36px"></span>
+                    </button>
+                    <div class="collapse navbar-collapse top-collapse" id="navbarSupportedContent">
+                        <ul class="nav align-items-center justify-content-end">
+                            <li class="nav-item dropdown">
+                                <a href="notification.html" class="nav-link">
+                                    <!-- badge -->
+                                    <span class="notification">
+                                        <i class="mdi mdi-bell-outline"></i>
+                                        <span class="badge badge-danger rounded-pill">0</span>
+                                    </span>
+                                    <!-- /badge -->
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <!-- badge -->
+                                    <span class="user">
+                                        <img src="./assets/img/user.png" alt="">
+                                        <span class="user-details">
+                                            <h3>Admin</h3>
+                                            <small>Tohidul islam</small>
+                                        </span>
+                                    </span>
+                                    <!-- /badge -->
+                                </a>
+                                <!-- Dropdown -->
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown p-0" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="profile.html"><i class="mdi mdi-account-circle-outline pr-1"></i>Profile</a>
+                                    <a class="dropdown-item" href="login.html"><i class="mdi mdi-logout pr-1"></i>Logout</a>
+                                </div>
+                                <!-- /Dropdown -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--/Header-->
+        <!-- main -->
+        <main class="main">
+            <div class="container-wrapper">
+                <!--Dashboard Card-->
+                <div class="dashboard-card mb-3">
+                    <div class="grid">
+                        <div class="grid-item">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <span class="mdi mdi-chart-bar"></span>
+                                        <h3>Growth <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></h3>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <div class="custom-rangeslider">
+                                        <input class="custom-rangeInput" title="Percentage" id="range-slider1" type="range" min="0" max="100" value="70" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+                                        <span class="custom-rangeslider__tooltip">0</span>
+                                        <span class="custom-rangeslider__label">
+                                          <span class="custom-rangeslider__label-min">0%</span>
+                                          <span class="custom-rangeslider__label-max">100%</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <span class="mdi mdi-chart-areaspline"></span>
+                                        <h3>Task <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></h3>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <div class="custom-rangeslider">
+                                        <input class="custom-rangeInput" title="Percentage" id="range-slider2" type="range" min="0" max="100" value="35" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+                                        <span class="custom-rangeslider__tooltip">0</span>
+                                        <span class="custom-rangeslider__label">
+                                          <span class="custom-rangeslider__label-min">0%</span>
+                                          <span class="custom-rangeslider__label-max">100%</span>
+                                        </span>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <span class="mdi mdi-chart-arc"></span>
+                                        <h3>Activites <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></h3>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <div class="custom-rangeslider">
+                                        <input class="custom-rangeInput" title="Percentage" id="range-slider3" type="range" min="0" max="100" value="50" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+                                        <span class="custom-rangeslider__tooltip">0</span>
+                                        <span class="custom-rangeslider__label">
+                                          <span class="custom-rangeslider__label-min">0%</span>
+                                          <span class="custom-rangeslider__label-max">100%</span>
+                                        </span>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <span class="mdi mdi-lightbulb-on-outline"></span>
+                                        <h3>Target <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></h3>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <div class="custom-rangeslider">
+                                        <input class="custom-rangeInput" title="Percentage" id="range-slider3" type="range" min="0" max="100" value="50" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+                                        <span class="custom-rangeslider__tooltip">0</span>
+                                        <span class="custom-rangeslider__label">
+                                          <span class="custom-rangeslider__label-min">0%</span>
+                                          <span class="custom-rangeslider__label-max">100%</span>
+                                        </span>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Dashboard Card-->
+                <!--Quick Links-->
+                <div class="quick-links mb-3">
+                    <h3 class="title text-muted py-3">Quick Links</h3>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <h3><i class="mdi mdi-account-settings-outline pr-1"></i>Member List</h3>
+                                        <a href="member-list.html">
+                                            <span class="mdi mdi-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <h3><i class="mdi mdi-bell-outline pr-1"></i>Notification</h3>
+                                        <a href="notification.html">
+                                            <span class="mdi mdi-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <h3><i class="mdi mdi-cog-outline pr-1"></i>Settings</h3>
+                                        <a href="setting.html">
+                                            <span class="mdi mdi-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <h3><i class="mdi mdi-crown-outline pr-1"></i>Accounts</h3>
+                                        <a href="profile.html">
+                                            <span class="mdi mdi-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Quick Links-->
+                <!--Notification-->
+                <div class="notification">
+                    <h3 class="title text-muted py-3">Notification</h3>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card shadow-sm">
+                                <div class="card-header py-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="text-muted">Notification</div> 
+                                        <div class="text-right">
+                                            <div class="dropdown">
+                                                <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn p-0 shadow-none">
+                                                    <i class="mdi mdi-dots-vertical"></i>
+                                                </button> 
+                                                <div aria-labelledby="dropdownMenuButton" class="dropdown-menu dropdown-menu-right">
+                                                    <a href="#" class="dropdown-item">Action</a> 
+                                                    <a href="#" class="dropdown-item">Another action</a> 
+                                                    <a href="#" class="dropdown-item">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="nav notification">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <span class="notify-box">
+                                                    <span class="icon-box">
+                                                        <i class="mdi mdimdi mdi-bell-outline"></i>
+                                                    </span>
+                                                    <span class="title">
+                                                        <h3>Notification</h3>
+                                                        <div class="title-des">
+                                                            <small><i class="mdi mdi-map-marker-multiple-outline pr-1"></i>Dhanmondi</small>
+                                                            <small><i class="mdi mdi-calendar-check-outline pr-1"></i>10/5/2020</small>
+                                                            <small><i class="mdi mdi-calendar-clock pr-1"></i>10:00am</small>
+                                                        </div>
+                                                    </span>
+                                                </span>
+                                                
+                                            </a>
+                                            <button type="button" class="btn btn-default shadow-none remove">
+                                                    <i class="mdi mdi-close"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <span class="notify-box">
+                                                    <span class="icon-box">
+                                                        <i class="mdi mdimdi mdi-bell-outline"></i>
+                                                    </span>
+                                                    <span class="title">
+                                                        <h3>Notification</h3>
+                                                        <div class="title-des">
+                                                            <small><i class="mdi mdi-map-marker-multiple-outline pr-1"></i>Dhanmondi</small>
+                                                            <small><i class="mdi mdi-calendar-check-outline pr-1"></i>10/5/2020</small>
+                                                            <small><i class="mdi mdi-calendar-clock pr-1"></i>10:00am</small>
+                                                        </div>
+                                                    </span>
+                                                </span>
+                                                
+                                            </a>
+                                            <button type="button" class="btn btn-default shadow-none remove">
+                                                    <i class="mdi mdi-close"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <span class="notify-box">
+                                                    <span class="icon-box">
+                                                        <i class="mdi mdimdi mdi-bell-outline"></i>
+                                                    </span>
+                                                    <span class="title">
+                                                        <h3>Notification</h3>
+                                                        <div class="title-des">
+                                                            <small><i class="mdi mdi-map-marker-multiple-outline pr-1"></i>Dhanmondi</small>
+                                                            <small><i class="mdi mdi-calendar-check-outline pr-1"></i>10/5/2020</small>
+                                                            <small><i class="mdi mdi-calendar-clock pr-1"></i>10:00am</small>
+                                                        </div>
+                                                    </span>
+                                                </span>
+                                                
+                                            </a>
+                                            <button type="button" class="btn btn-default shadow-none remove">
+                                                    <i class="mdi mdi-close"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <span class="notify-box">
+                                                    <span class="icon-box">
+                                                        <i class="mdi mdimdi mdi-bell-outline"></i>
+                                                    </span>
+                                                    <span class="title">
+                                                        <h3>Notification</h3>
+                                                        <div class="title-des">
+                                                            <small><i class="mdi mdi-map-marker-multiple-outline pr-1"></i>Dhanmondi</small>
+                                                            <small><i class="mdi mdi-calendar-check-outline pr-1"></i>10/5/2020</small>
+                                                            <small><i class="mdi mdi-calendar-clock pr-1"></i>10:00am</small>
+                                                        </div>
+                                                    </span>
+                                                </span>
+                                                
+                                            </a>
+                                            <button type="button" class="btn btn-default shadow-none remove">
+                                                    <i class="mdi mdi-close"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Notification-->
+            </div>
+        </main>
+        <!-- /main -->
+    </div>
+    <!-- js -->
+    <script src="./assets/js/core/jquery.min.js"></script>
+    <script src="./assets/js/core/popper.min.js"></script>
+    <script src="./assets/js/core/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

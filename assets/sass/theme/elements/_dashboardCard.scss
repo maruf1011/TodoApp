@@ -1,0 +1,38 @@
+//Dashboar dCard
+
+.dashboard-card {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card {
+        border-radius: 10px;
+        overflow: hidden;
+        border: 0;
+        .card-body {
+            .content {
+                color: #9c9c9c;
+                span {
+                    font-size: 84px;
+                    color: #7b88ff;
+                    margin-right: 10px;
+                    position: absolute;
+                    padding: 0;
+                    left: 0;
+                    top: 0;
+                    padding-left: 30px;
+                }
+                h3 {
+                    font-size: 24px;
+                    font-family: 'Texturina', serif;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                    color: #716c6c;
+                    text-align: right;
+                    .card-text {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
